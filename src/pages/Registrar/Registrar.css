@@ -1,0 +1,36 @@
+#corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#lado-esquedo-questionaio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#lado-direito-questionaio{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#fase1{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    margin-right: 100px;
+    color: aliceblue;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    /*fazendo um circulo*/
+    border-radius: 50%;
+}
