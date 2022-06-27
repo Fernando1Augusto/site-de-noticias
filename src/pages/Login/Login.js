@@ -13,6 +13,7 @@ function Login() {
     const verifica = () => {
         if (email === "admin@gmail.com" && senha === "admin") {
             alert("Login realizado com sucesso!");
+            window.location.href = "/home";
         }
         else {
             alert("Login ou senha incorretos!");

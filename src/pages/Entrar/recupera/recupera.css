@@ -1,0 +1,41 @@
+.corpo{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.texto input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.texto button{
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #00b300;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.botao{
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: blue;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 301px;
+    
+}

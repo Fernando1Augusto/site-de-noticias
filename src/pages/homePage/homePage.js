@@ -1,24 +1,22 @@
-import React, {useEffect} from "react";
-import "../Registrar/Registrar.css";
+import React from "react";
 import Box from '@mui/material/Box';
-import CabecalhoRegistrar from "./CabecalhoRegistrar";
 import icon from "../../assets/images/user.png";
+import jornal from "../../assets/images/newspaper.png";
+import globo from "../../assets/images/globo.png";
+import sair from "../../assets/images/sair.png";
+import Cabecalho from "./CabecalhoHome";
+import "./homePage.css";
 
-function RegistrarPT3() {
-
-    //para selecionar um quadro
-
-
+function HomePage() {
     return (
         <>
-            < CabecalhoRegistrar />
-            <div id="corpo">
-                <div id="titulo">
-                    <h1>Queremos te conhecer....</h1>
-                    <h2> Qual perfil de investidor que você se considera:</h2>
+            <Cabecalho />
+            <div id="corpo1">
+                <div id="titulo1">
+                    <h2>Bem vindo admin</h2>
                 </div>
                 <div id="quadros">
-                    <div className="quadro1">
+                    <div className="quadro1" onClick={(e) => {window.location.href = "/user"}}>         
                         <Box
                             sx={{
                                 width: 300,
@@ -35,8 +33,8 @@ function RegistrarPT3() {
                                 <img src={icon} alt="icon" />
                             </div>
                             <div className="texto">
-                                <h4> Investidor consevador</h4>
-                                <h5> Busca a preservação de recursos, com zero tolerância a perdas e busca alta liquidez. Este perfil é comum para quem está começando a investir.</h5>
+                                <h3> Perfil </h3>
+                                <h4> Gerencie suas informações </h4>
                             </div>
 
 
@@ -56,11 +54,11 @@ function RegistrarPT3() {
                             }}
                         >
                             <div className="icon-user">
-                                <img src={icon} alt="icon" />
+                                <img src={globo} alt="globo" />
                             </div>
                             <div className="texto">
-                                <h4> Investidor Moderado </h4>
-                                <h5> É aquele que tolera um pouco mais de risco, a fim de conseguir uma rentabilidade igualmente maior. A menor liquidez e perdas controladas são aceitas, porém não se abre mão da proteção patrimonial.</h5>
+                                <h3> últimas Notícias</h3>
+                                <h4>Acompanhe as notícias de careter geral do mundo dos fundos imobiliários</h4>
                             </div>
                         </Box>
                     </div>
@@ -78,26 +76,21 @@ function RegistrarPT3() {
                             }}
                         >
                             <div className="icon-user">
-                                <img src={icon} alt="icon" />
-                            </div>
-                            <div className="texto">
-                                <h4> Investidor Arrojado </h4>
-                                <h5> É o que assume maiores riscos para conseguir o maior retorno possível.
-                                    Essa classificação é dada aos investidores que já conhecem o funcionamento do mercado financeiro e as características dos ativos. </h5>
+                                <img src={jornal} alt="jornal" />
+                                <div className="texto">
+                                    <h3> Mais Relevantes </h3>
+                                    <h4>Acompanhe as melhores cotas e notícias sugeridas de acordo com seu perfil.</h4>
+                                </div>
                             </div>
                         </Box>
                     </div>
                 </div>
-                <div className="navegação">
-                    <button className="botao-voltar" onClick={(e) => (window.location.href = "/registrar-pt2")} >Voltar</button>
-                    <p className="pg1-1-1">1</p>
-                    <p className="pg2-2-2">2</p>
-                    <p className="pg3-3-3">3</p>
-                    <button className="botao-prosseguir" onClick={(e) => (window.location.href = "/login")}>finalizar</button>
-                </div>
+            </div>
+            <div className=" btn-sair">
+                <img src={sair} alt="sair" onClick={(e)=> {window.location.href="/login"}}/>
             </div>
         </>
     );
 }
 
-export default RegistrarPT3;
+export default HomePage;
