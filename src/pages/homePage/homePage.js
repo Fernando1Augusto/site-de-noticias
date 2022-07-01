@@ -40,7 +40,7 @@ function HomePage() {
 
                         </Box>
                     </div>
-                    <div className="quadro2">
+                    <div className="quadro2" onClick={(e) => {window.open("https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-28062022/#:~:text=14h05%20–%20Ibovespa%20opera%20na%20mínima%2C%20em%20linha%20com%20NY&text=O%20Ibovespa%20opera%20com%20baixa,lutava%20para%20manter%20sua%20recuperação.")}}>
                         <Box
                             sx={{
                                 width: 300,
@@ -58,11 +58,11 @@ function HomePage() {
                             </div>
                             <div className="texto">
                                 <h3> últimas Notícias</h3>
-                                <h4>Acompanhe as notícias de careter geral do mundo dos fundos imobiliários</h4>
+                                <h4>Acompanhe as notícias de caracter geral do mundo dos fundos imobiliários</h4>
                             </div>
                         </Box>
                     </div>
-                    <div className="quadro3">
+                    <div className="quadro3" onClick={(e) => {window.open("https://fiis.com.br/noticias/mght11-mantem-distribuicao-desafios-do-setor/")}} >
                         <Box
                             sx={{
                                 width: 300,
